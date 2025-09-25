@@ -1,6 +1,5 @@
 package com.example.tp_aplicaciones_i;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,7 +23,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     private RecyclerView recyclerViewExpenses;
     private TextView textViewEmpty;
@@ -35,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
         
         initializeViews();
         setupRecyclerView();
@@ -65,13 +64,13 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
                 if (itemId == R.id.nav_home) {
-                    // Already on home (MainActivity is the home)
+                    // Already on home
                     return true;
                 } else if (itemId == R.id.nav_analysis) {
-                    Toast.makeText(MainActivity.this, "Análisis - En desarrollo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HomeActivity.this, "Análisis - En desarrollo", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (itemId == R.id.nav_profile) {
-                    Toast.makeText(MainActivity.this, "Perfil - En desarrollo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HomeActivity.this, "Perfil - En desarrollo", Toast.LENGTH_SHORT).show();
                     return true;
                 }
                 return false;
@@ -83,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Agregar nuevo gasto - En desarrollo", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeActivity.this, "Agregar nuevo gasto - En desarrollo", Toast.LENGTH_SHORT).show();
                 // TODO: Navigate to add expense activity
             }
         });
