@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TP_AplicacionesI" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#12A3ED</item>
     </style>
 
     <style name="Theme.TP_AplicacionesI" parent="Base.Theme.TP_AplicacionesI" />

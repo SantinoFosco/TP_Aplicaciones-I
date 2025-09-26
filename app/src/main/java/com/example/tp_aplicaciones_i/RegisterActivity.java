@@ -19,7 +19,6 @@ public class RegisterActivity extends AppCompatActivity {
         Button registerButton = findViewById(R.id.registerButton);
 
         registerButton.setOnClickListener(v -> {
-            // Lógica para registrar usuario
             startActivity(new Intent(RegisterActivity.this, MainActivity.class));
             finish();
         });

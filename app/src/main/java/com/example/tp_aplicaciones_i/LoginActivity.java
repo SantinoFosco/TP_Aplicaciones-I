@@ -20,7 +20,9 @@ public class LoginActivity extends AppCompatActivity {
         TextView registerLink = findViewById(R.id.registerLink);
 
         loginButton.setOnClickListener(v -> {
-            // Lógica para iniciar sesión
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
         });
 
         registerLink.setOnClickListener(v -> {

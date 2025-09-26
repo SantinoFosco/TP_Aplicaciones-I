@@ -8,8 +8,6 @@
     android:orientation="vertical"
     android:padding="0px">
 
-    <!-- Página 1 -->
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +56,5 @@
             app:layout_constraintBottom_toBottomOf="parent"
             tools:layout_editor_absoluteX="0dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- Página 2 (oculta por defecto, mostrar con lógica en la actividad) -->
 
 </LinearLayout>

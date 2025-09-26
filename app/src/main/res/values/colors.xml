@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Custom colors for expense tracking -->
+    <color name="expense_card_background">#F8F9FA</color>
+    <color name="expense_amount_color">#DC3545</color>
+    <color name="total_background">#FFE5E5</color>
+    <color name="total_border">#FFCCCC</color>
+    <color name="accent_blue">#007BFF</color>
+    <color name="text_primary">#212529</color>
+    <color name="text_secondary">#6C757D</color>
 </resources>
